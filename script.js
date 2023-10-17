@@ -6,10 +6,10 @@
 // 1.3 Create a variable `Kalvian-2` with the navigator's name.
 // 1.4 Print `"The navigator's name is YYYY"`.
 
-const Kalvian_1 = 'Ichigo';
+const Kalvian_1 = "Ichigo";
 console.log(`The driver's name is ${Kalvian_1}`);
 
-const Kalvian_2 = 'Grimmjow';
+const Kalvian_2 = "Grimmjow";
 console.log(`The navigator's name is ${Kalvian_2}`);
 
 // Progression 2: Control Statements - 1
@@ -43,7 +43,7 @@ function checkLength() {
 // - for example. In String Kalvian - a and i are vowels. Print Kalvian a i a 1 4 5.
 
 function checkForVowels(givenString) {
-  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  const vowels = ["a", "e", "i", "o", "u"];
   let indexArr = [];
   let vowelsArr = [];
   for (let index = 0; index < givenString.length; index++) {
@@ -57,11 +57,11 @@ function checkForVowels(givenString) {
   if (vowelsArr.length > 0) {
     console.log(`${givenString} ${[...vowelsArr]} ${[...indexArr]}`);
   } else {
-    console.log('no vowels');
+    console.log("no vowels");
   }
 }
 
-checkForVowels('Kalvian');
+checkForVowels("Kalvian");
 
 // 2.3. Check if the string contains uppercase and lowercase characters Xx
 // - Print the number of upper case characters
@@ -82,7 +82,7 @@ function upperCase(givenString) {
   console.log(`Uppercase: ${uppercase}, Lowercase: ${lowercase}`);
 }
 
-upperCase('Kalvian');
+upperCase("Kalvian");
 
 // Progression 3: Control Statements - 2
 // 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "Kalvian"
@@ -98,35 +98,35 @@ upperCase('Kalvian');
 // - What?! You both have the same name?
 
 function playWithChar(driver, navigator) {
-  let ans = '';
+  let ans = "";
   for (let index = 0; index < driver.length; index++) {
-    ans += driver[index].toUpperCase() + ' ';
+    ans += driver[index].toUpperCase() + " ";
   }
   console.log(ans);
 
-  let reversedNav = '';
+  let reversedNav = "";
   for (let index = navigator.length - 1; index >= 0; index--) {
     reversedNav += navigator[index];
   }
   console.log(reversedNav);
 
-  let mergedName = driver + ' ' + navigator;
-  let reverseMerge = navigator + ' ' + driver;
+  let mergedName = driver + " " + navigator;
+  let reverseMerge = navigator + " " + driver;
 
   console.log(mergedName, reverseMerge);
 
   let lexicographicOrder = [driver, navigator];
   lexicographicOrder.sort();
-  if (lexicographicOrder[0] == 'Driver') {
+  if (lexicographicOrder[0] == "Driver") {
     console.log(`The driver's name goes first.`);
-  } else if (lexicographicOrder[0] == 'Navigator') {
+  } else if (lexicographicOrder[0] == "Navigator") {
     console.log(`Yo, the navigator goes first definitely.`);
   } else {
     console.log(`What?! You both have the same name?`);
   }
 }
 
-playWithChar('Driver', 'Navigator');
+playWithChar("Driver", "Navigator");
 
 // Bonus Time!
 // Bonus 1:
@@ -151,34 +151,38 @@ playWithChar('Driver', 'Navigator');
 function loremGenerator() {
   let textCounter = 0;
 
-  let text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique. Blandit aliquam etiam erat velit scelerisque in dictum non. Hendrerit dolor magna eget est lorem ipsum dolor sit. Nunc sed velit dignissim sodales ut eu sem. Est lorem ipsum dolor sit. Ut etiam sit amet nisl purus in. Massa ultricies mi quis hendrerit dolor magna eget est. Non tellus orci ac auctor augue mauris. Augue eget arcu dictum varius duis at consectetur lorem. Aliquet lectus proin nibh nisl condimentum id venenatis a. Eu lobortis elementum nibh tellus molestie nunc non blandit. Leo urna molestie at elementum eu facilisis sed odio morbi. Nulla pharetra diam sit amet. Eu ultrices vitae auctor eu. Nibh mauris cursus mattis molestie. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Vulputate dignissim suspendisse in est ante in nibh mauris cursus. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. Est placerat in egestas erat imperdiet sed euismod. Feugiat sed lectus vestibulum mattis ullamcorper velit. Mi bibendum neque egestas congue quisque. Nunc non blandit massa enim nec dui. Vel turpis nunc eget lorem. Etiam non quam lacus suspendisse faucibus interdum posuere lorem. Nam at lectus urna duis convallis convallis. Maecenas sed enim ut sem viverra aliquet eget. Iaculis urna id volutpat lacus laoreet. Eu ultrices vitae auctor eu. Lectus nulla at volutpat diam ut venenatis. Lacinia quis vel eros donec ac odio tempor orci dapibus. Malesuada fames ac turpis egestas sed tempus urna et.
+  let text = `She sat down with her notebook in her hand, her mind wandering to faraway places. She paused and considered all that had happened. It hadn't gone as expected. When the day began she thought it was going to be a bad one, but as she sat recalling the day's events to write them down, she had to admit, it had been a rather marvelous day.
+  Her mom had warned her. She had been warned time and again, but she had refused to believe her. She had done everything right and she knew she would be rewarded for doing so with the promotion. So when the promotion was given to her main rival, it not only stung, it threw her belief system into disarray. It was her first big lesson in life, but not the last.
+  The wolves stopped in their tracks, sizing up the mother and her cubs. It had been over a week since their last meal and they were getting desperate. The cubs would make a good meal, but there were high risks taking on the mother Grizzly. A decision had to be made and the wrong choice could signal the end of the pack.
+  "It was so great to hear from you today and it was such weird timing," he said. "This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago. I'd love to get together and tell you about it if you're up for a cup of coffee," he continued, laying the trap he'd been planning for years.
+  Patrick didn't want to go. The fact that she was insisting they must go made him want to go even less. He had no desire to make small talk with strangers he would never again see just to be polite. But she insisted that Patrick go, and she would soon find out that this would be the biggest mistake she could make in their relationship.
   `;
 
   console.log(
-    text.split(' ').filter(function (n) {
-      return n != '';
+    text.split(" ").filter(function (n) {
+      return n != "";
     }).length
   );
   console.log(
     text
-      .split(' ')
+      .split(" ")
       .filter(function (n) {
-        return n != '';
+        return n != "";
       })
       .filter(function (m) {
-        return m == 'et';
+        return m == "et";
       }).length
   );
 }
 
 function palindromeCheck(givenString) {
   let newString = givenString.toLowerCase();
-  newString = newString.split(' ').filter(function (n) {
-    return n != '';
+  newString = newString.split(" ").filter(function (n) {
+    return n != "";
   });
-  let mainString = '';
+  let mainString = "";
   for (let index = 0; index < givenString.length; index++) {
-    if (givenString[index] !== ' ' && givenString[index] !== ',') {
+    if (givenString[index] !== " " && givenString[index] !== ",") {
       mainString += givenString[index];
     }
   }
@@ -188,11 +192,11 @@ function palindromeCheck(givenString) {
 
   for (let i = 0; i < len / 2; i++) {
     if (mainString[i] !== mainString[len - 1 - i]) {
-      return 'It is not a palindrome';
+      return "It is not a palindrome";
     }
   }
-  return 'It is a palindrome';
+  return "It is a palindrome";
 }
 
 loremGenerator();
-console.log(palindromeCheck('A man, a plan, a canal, Panama'));
+console.log(palindromeCheck("A man, a plan, a canal, Panama"));
