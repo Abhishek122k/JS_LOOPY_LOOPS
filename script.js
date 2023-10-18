@@ -148,32 +148,22 @@ playWithChar("Driver", "Navigator");
 
 // Hint: If you use Google to help you to find solution to this iteration, you might run into some solutions that use advanced string or array methods (such as join(), reverse(), etc.). However, try to apply the knowledge you currently have since you can build pretty nice solution with just using for loop, if-else statements with some break and continue... Just sayin'
 
-function loremGenerator() {
-  let textCounter = 0;
 
-  let text = `She sat down with her notebook in her hand, her mind wandering to faraway places. She paused and considered all that had happened. It hadn't gone as expected. When the day began she thought it was going to be a bad one, but as she sat recalling the day's events to write them down, she had to admit, it had been a rather marvelous day.
-  Her mom had warned her. She had been warned time and again, but she had refused to believe her. She had done everything right and she knew she would be rewarded for doing so with the promotion. So when the promotion was given to her main rival, it not only stung, it threw her belief system into disarray. It was her first big lesson in life, but not the last.
-  The wolves stopped in their tracks, sizing up the mother and her cubs. It had been over a week since their last meal and they were getting desperate. The cubs would make a good meal, but there were high risks taking on the mother Grizzly. A decision had to be made and the wrong choice could signal the end of the pack.
-  "It was so great to hear from you today and it was such weird timing," he said. "This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago. I'd love to get together and tell you about it if you're up for a cup of coffee," he continued, laying the trap he'd been planning for years.
-  Patrick didn't want to go. The fact that she was insisting they must go made him want to go even less. He had no desire to make small talk with strangers he would never again see just to be polite. But she insisted that Patrick go, and she would soon find out that this would be the biggest mistake she could make in their relationship.
+
+  let text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et tellus et metus facilisis malesuada. et Curabitur dapibus t et auctor arcu, eu lacinia odio bibendum nec. Sed euismod hendrerit orci, at varius dui congue eget. Nullam sed erat nec dui scelerisque bibendum. Vivamus in nunc non eros euismod vulputate. In eu odio id tortor laoreet hendrerit at vel urna. Donec euismod est sed sem hendrerit, eget venenatis sapien congue.Pellentesque feugiat urna nec urna tempor, eget laoreet ligula volutpat. Suspendisse sollicitudin libero at purus malesuada, eget posuere libero ullamcorper. Fusce laoreet dui vel quam viverra, vel fringilla eros scelerisque. Curabitur auctor, justo a condimentum posuere, arcu massa consectetur nunc, vel laoreet purus libero eu massa. Nullam tincidunt, augue at auctor tincidunt, mi neque ultricies lectus, at consectetur purus purus ut mi.Sed eget quam et purus tristique vehicula. Nunc bibendum nunc sed sapien tristique, at dictum sem sodales. Quisque ac mi a mi varius dictum. Curabitur sit amet fringilla nulla, nec fermentum odio. Vestibulum nec leo sit amet erat tincidunt tincidunt. Nullam sit amet tellus eget orci tristique laoreet. Sed nec turpis sit amet ex facilisis eleifend.
   `;
 
-  console.log(
-    text.split(" ").filter(function (n) {
-      return n != "";
-    }).length
-  );
-  console.log(
-    text
-      .split(" ")
-      .filter(function (n) {
-        return n != "";
-      })
-      .filter(function (m) {
-        return m == "et";
-      }).length
-  );
+  const noOfWords=text.split(" ")
+console.log(noOfWords.length)
+
+let etCount=0
+
+for(let i=0;i<noOfWords.length;i++){
+  if(noOfWords[i]=="et"){
+    etCount++
+  }
 }
+console.log(etCount)
 
 function palindromeCheck(givenString) {
   let newString = givenString.toLowerCase();
