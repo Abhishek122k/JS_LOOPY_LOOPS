@@ -6,10 +6,10 @@
 // 1.3 Create a variable `Kalvian-2` with the navigator's name.
 // 1.4 Print `"The navigator's name is YYYY"`.
 
-const Kalvian_1 = "Ichigo";
+const Kalvian_1 = 'XXXX';
 console.log(`The driver's name is ${Kalvian_1}`);
 
-const Kalvian_2 = "Grimmjow";
+const Kalvian_2 = 'YYYY';
 console.log(`The navigator's name is ${Kalvian_2}`);
 
 // Progression 2: Control Statements - 1
@@ -43,7 +43,7 @@ function checkLength() {
 // - for example. In String Kalvian - a and i are vowels. Print Kalvian a i a 1 4 5.
 
 function checkForVowels(givenString) {
-  const vowels = ["a", "e", "i", "o", "u"];
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
   let indexArr = [];
   let vowelsArr = [];
   for (let index = 0; index < givenString.length; index++) {
@@ -57,11 +57,11 @@ function checkForVowels(givenString) {
   if (vowelsArr.length > 0) {
     console.log(`${givenString} ${[...vowelsArr]} ${[...indexArr]}`);
   } else {
-    console.log("no vowels");
+    console.log('no vowels');
   }
 }
 
-checkForVowels("Kalvian");
+checkForVowels('Kalvian');
 
 // 2.3. Check if the string contains uppercase and lowercase characters Xx
 // - Print the number of upper case characters
@@ -82,7 +82,7 @@ function upperCase(givenString) {
   console.log(`Uppercase: ${uppercase}, Lowercase: ${lowercase}`);
 }
 
-upperCase("Kalvian");
+upperCase('Kalvian');
 
 // Progression 3: Control Statements - 2
 // 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "Kalvian"
@@ -98,35 +98,35 @@ upperCase("Kalvian");
 // - What?! You both have the same name?
 
 function playWithChar(driver, navigator) {
-  let ans = "";
+  let ans = '';
   for (let index = 0; index < driver.length; index++) {
-    ans += driver[index].toUpperCase() + " ";
+    ans += driver[index].toUpperCase() + ' ';
   }
   console.log(ans);
 
-  let reversedNav = "";
+  let reversedNav = '';
   for (let index = navigator.length - 1; index >= 0; index--) {
     reversedNav += navigator[index];
   }
   console.log(reversedNav);
 
-  let mergedName = driver + " " + navigator;
-  let reverseMerge = navigator + " " + driver;
+  let mergedName = driver + ' ' + navigator;
+  let reverseMerge = navigator + ' ' + driver;
 
   console.log(mergedName, reverseMerge);
 
   let lexicographicOrder = [driver, navigator];
   lexicographicOrder.sort();
-  if (lexicographicOrder[0] == "Driver") {
+  if (lexicographicOrder[0] == 'Driver') {
     console.log(`The driver's name goes first.`);
-  } else if (lexicographicOrder[0] == "Navigator") {
+  } else if (lexicographicOrder[0] == 'Navigator') {
     console.log(`Yo, the navigator goes first definitely.`);
   } else {
     console.log(`What?! You both have the same name?`);
   }
 }
 
-playWithChar("Driver", "Navigator");
+playWithChar('Driver', 'Navigator');
 
 // Bonus Time!
 // Bonus 1:
@@ -148,31 +148,37 @@ playWithChar("Driver", "Navigator");
 
 // Hint: If you use Google to help you to find solution to this iteration, you might run into some solutions that use advanced string or array methods (such as join(), reverse(), etc.). However, try to apply the knowledge you currently have since you can build pretty nice solution with just using for loop, if-else statements with some break and continue... Just sayin'
 
+function loremGenerator() {
+  let textCounter = 0;
 
-
-  let text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et tellus et metus facilisis malesuada. et Curabitur dapibus t et auctor arcu, eu lacinia odio bibendum nec. Sed euismod hendrerit orci, at varius dui congue eget. Nullam sed erat nec dui scelerisque bibendum. Vivamus in nunc non eros euismod vulputate. In eu odio id tortor laoreet hendrerit at vel urna. Donec euismod est sed sem hendrerit, eget venenatis sapien congue.Pellentesque feugiat urna nec urna tempor, eget laoreet ligula volutpat. Suspendisse sollicitudin libero at purus malesuada, eget posuere libero ullamcorper. Fusce laoreet dui vel quam viverra, vel fringilla eros scelerisque. Curabitur auctor, justo a condimentum posuere, arcu massa consectetur nunc, vel laoreet purus libero eu massa. Nullam tincidunt, augue at auctor tincidunt, mi neque ultricies lectus, at consectetur purus purus ut mi.Sed eget quam et purus tristique vehicula. Nunc bibendum nunc sed sapien tristique, at dictum sem sodales. Quisque ac mi a mi varius dictum. Curabitur sit amet fringilla nulla, nec fermentum odio. Vestibulum nec leo sit amet erat tincidunt tincidunt. Nullam sit amet tellus eget orci tristique laoreet. Sed nec turpis sit amet ex facilisis eleifend.
+  let text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique. Blandit aliquam etiam erat velit scelerisque in dictum non. Hendrerit dolor magna eget est lorem ipsum dolor sit. Nunc sed velit dignissim sodales ut eu sem. Est lorem ipsum dolor sit. Ut etiam sit amet nisl purus in. Massa ultricies mi quis hendrerit dolor magna eget est. Non tellus orci ac auctor augue mauris. Augue eget arcu dictum varius duis at consectetur lorem. Aliquet lectus proin nibh nisl condimentum id venenatis a. Eu lobortis elementum nibh tellus molestie nunc non blandit. Leo urna molestie at elementum eu facilisis sed odio morbi. Nulla pharetra diam sit amet. Eu ultrices vitae auctor eu. Nibh mauris cursus mattis molestie. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Vulputate dignissim suspendisse in est ante in nibh mauris cursus. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. Est placerat in egestas erat imperdiet sed euismod. Feugiat sed lectus vestibulum mattis ullamcorper velit. Mi bibendum neque egestas congue quisque. Nunc non blandit massa enim nec dui. Vel turpis nunc eget lorem. Etiam non quam lacus suspendisse faucibus interdum posuere lorem. Nam at lectus urna duis convallis convallis. Maecenas sed enim ut sem viverra aliquet eget. Iaculis urna id volutpat lacus laoreet. Eu ultrices vitae auctor eu. Lectus nulla at volutpat diam ut venenatis. Lacinia quis vel eros donec ac odio tempor orci dapibus. Malesuada fames ac turpis egestas sed tempus urna et.
   `;
 
-  const noOfWords=text.split(" ")
-console.log(noOfWords.length)
-
-let etCount=0
-
-for(let i=0;i<noOfWords.length;i++){
-  if(noOfWords[i]=="et"){
-    etCount++
-  }
+  console.log(
+    text.split(' ').filter(function (n) {
+      return n != '';
+    }).length
+  );
+  console.log(
+    text
+      .split(' ')
+      .filter(function (n) {
+        return n != '';
+      })
+      .filter(function (m) {
+        return m == 'et';
+      }).length
+  );
 }
-console.log(etCount)
 
 function palindromeCheck(givenString) {
   let newString = givenString.toLowerCase();
-  newString = newString.split(" ").filter(function (n) {
-    return n != "";
+  newString = newString.split(' ').filter(function (n) {
+    return n != '';
   });
-  let mainString = "";
+  let mainString = '';
   for (let index = 0; index < givenString.length; index++) {
-    if (givenString[index] !== " " && givenString[index] !== ",") {
+    if (givenString[index] !== ' ' && givenString[index] !== ',') {
       mainString += givenString[index];
     }
   }
@@ -182,11 +188,11 @@ function palindromeCheck(givenString) {
 
   for (let i = 0; i < len / 2; i++) {
     if (mainString[i] !== mainString[len - 1 - i]) {
-      return "It is not a palindrome";
+      return 'It is not a palindrome';
     }
   }
-  return "It is a palindrome";
+  return 'It is a palindrome';
 }
 
 loremGenerator();
-console.log(palindromeCheck("A man, a plan, a canal, Panama"));
+console.log(palindromeCheck('A man, a plan, a canal, Panama'));
